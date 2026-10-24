@@ -1,0 +1,199 @@
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #f4f6f9;
+      padding: 20px;
+    }
+
+    /* Container utama */
+    .card {
+      background-color: #ffffff;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      max-width: 900px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    /* Header Toska */
+    .card-header {
+      background-color: #17a2b8;
+      color: white;
+      padding: 12px 20px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .card-body {
+      padding: 25px;
+    }
+
+    /* Layout Form */
+    .form-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      width: 180px;
+      font-weight: bold;
+      font-size: 13px;
+      color: #333;
+    }
+
+    /* Input, Textarea, dan Select */
+    .form-group input[type="text"],
+    .form-group input[type="number"],
+    .form-group input[type="password"],
+    .form-group textarea {
+      flex: 1;
+      padding: 8px 12px;
+      border: 1px solid #dcdcdc;
+      border-radius: 3px;
+      font-size: 13px;
+      color: #495057;
+      outline: none;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: #17a2b8;
+    }
+
+    /* ID Admin (Readonly) */
+    .input-readonly {
+      background-color: #e9ecef;
+      color: #6c757d;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+    }
+
+    /* Radio Button */
+    .radio-group {
+      display: flex;
+      gap: 15px;
+      font-size: 13px;
+    }
+
+    .radio-group label {
+      width: auto;
+      font-weight: normal;
+      cursor: pointer;
+    }
+
+    /* File Upload Section */
+    .file-upload-wrapper {
+      flex: 1;
+      display: flex;
+      gap: 10px;
+    }
+
+    .file-input-container {
+      flex: 1;
+      border: 1px solid #dcdcdc;
+      border-radius: 3px;
+      padding: 4px;
+      background-color: #fff;
+    }
+
+    .file-input-container input[type="file"] {
+      font-size: 12px;
+      width: 100%;
+    }
+
+    .btn-upload {
+      background-color: #e9ecef;
+      border: 1px solid #ced4da;
+      color: #495057;
+      padding: 6px 15px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    .btn-upload:hover {
+      background-color: #dae0e5;
+    }
+
+    .help-text {
+      width: 100%;
+      margin-left: 180px;
+      margin-top: 5px;
+      font-size: 11px;
+      color: #6c757d;
+    }
+
+    /* Tombol Aksi */
+    .btn-group {
+      margin-left: 180px;
+      display: flex;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .btn {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 3px;
+      color: white;
+      font-weight: bold;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .btn-tambah {
+      background-color: #17a2b8;
+    }
+
+    .btn-tambah:hover {
+      background-color: #138496;
+    }
+
+    .btn-hapus {
+      background-color: #dc3545;
+    }
+
+    .btn-hapus:hover {
+      background-color: #bd2130;
+    }
+
+    .btn-cancel {
+      background-color: #ffc107;
+      color: #212529;
+    }
+
+    .btn-cancel:hover {
+      background-color: #e0a800;
+    }
+
+    /* Responsif untuk layar HP */
+    @media (max-width: 600px) {
+      .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .form-group label {
+        width: 100%;
+        margin-bottom: 5px;
+      }
+      
+      .btn-group,
+      .help-text {
+        margin-left: 0;
+      }
+
+      .file-upload-wrapper {
+        width: 100%;
+      }
+    }
